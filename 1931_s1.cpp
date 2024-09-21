@@ -6,8 +6,8 @@ using namespace std;
 
 vector<pair<int,int>>list;
 
-bool compare(const pair<int,int> &a, const pair<int,int> &b){
-    return a.second>b.second ? false : (a.second==b.second ? a.first<b.first : true);
+bool compare(const pair<int,int> &a, const pair<int,int> &b){//less가 기본 오름차순 < 작은게 앞쪽 >큰게앞쪽
+    return a.second<b.second ? true : (a.second==b.second ? a.first<b.first : false); 
 
 }
 
